@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstStepComponent } from './components/first-step/first-step.component';
@@ -8,6 +7,7 @@ import { SecondStepComponent } from './components/second-step/second-step.compon
 import { ThirdStepComponent } from './components/third-step/third-step.component';
 import { FifthStepComponent } from './components/fifth-step/fifth-step.component';
 import { SixtyStepComponent } from './components/sixty-step/sixty-step.component';
+import { FourthStepComponent } from './components/fourth-step/fourth-step.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { SixtyStepComponent } from './components/sixty-step/sixty-step.component
     SecondStepComponent,
     ThirdStepComponent,
     FifthStepComponent,
-    SixtyStepComponent
+    SixtyStepComponent,
+    FourthStepComponent
   ],
   imports: [
     BrowserModule,
