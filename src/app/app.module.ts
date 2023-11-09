@@ -8,6 +8,7 @@ import { ThirdStepComponent } from './components/third-step/third-step.component
 import { FifthStepComponent } from './components/fifth-step/fifth-step.component';
 import { SixtyStepComponent } from './components/sixty-step/sixty-step.component';
 import { FourthStepComponent } from './components/fourth-step/fourth-step.component';
+import { RlgTableComponent } from './components/rlg-table/rlg-table.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FourthStepComponent } from './components/fourth-step/fourth-step.compon
     ThirdStepComponent,
     FifthStepComponent,
     SixtyStepComponent,
-    FourthStepComponent
+    FourthStepComponent,
+    RlgTableComponent
   ],
   imports: [
     BrowserModule,
