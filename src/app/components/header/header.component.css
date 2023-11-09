@@ -6,11 +6,12 @@
   
   .switch > span {
     position: absolute;
-    top: 14px;
+    top: 10px;
     pointer-events: none;
     font-family: 'Helvetica', Arial, sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
+    font-family: lato;
     text-transform: uppercase;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .06);
     width: 50%;

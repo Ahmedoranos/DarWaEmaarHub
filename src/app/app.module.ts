@@ -18,6 +18,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,14 +34,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TwoOptionsRadioComponent,
     SuppliessComponent,
     SendButtonComponent,
-    RfqTableComponent
-
+    RfqTableComponent,
+    HeaderComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     TranslateModule.forRoot(
     {
       defaultLanguage:'en',

@@ -1,8 +1,12 @@
-<p>header works!</p>
 
-	<div class="switch">
-	    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+<div style="display: flex;border:  red;justify-content: center;">
+	<div class="switch" style="border: ;">
+	    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" 
+		 [(ngModel)]="isEnglish"  (change)="changeLanguage(isEnglish?true:false)">
 	    <label for="language-toggle"></label>
-	    <span class="on">AR</span>
-	    <span class="off">EN</span>
+	    <span class="off">AR</span>
+	    <span class="on">EN</span>
     </div>
+</div>
+
+
