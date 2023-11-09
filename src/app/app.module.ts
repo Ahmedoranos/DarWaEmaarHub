@@ -13,6 +13,8 @@ import { SvgsComponent } from './components/svgs/svgs.component';
 import { TwoOptionsRadioComponent } from './components/two-options-radio/two-options-radio.component';
 import { SuppliessComponent } from './components/suppliess/suppliess.component';
 import { SendButtonComponent } from './components/send-button/send-button.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,11 +29,13 @@ import { SendButtonComponent } from './components/send-button/send-button.compon
     SvgsComponent,
     TwoOptionsRadioComponent,
     SuppliessComponent,
-    SendButtonComponent
+    SendButtonComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
