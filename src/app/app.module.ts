@@ -16,7 +16,8 @@ import { RfqTableComponent } from './components/rfq-table/rfq-table.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { HeaderComponent } from './components/header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -33,6 +34,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     SuppliessComponent,
     SendButtonComponent,
     RfqTableComponent
+
+
   ],
   imports: [
     BrowserModule,
@@ -49,6 +52,8 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
       }
     }       
   )
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
