@@ -8,11 +8,16 @@ import { ThirdStepComponent } from './components/third-step/third-step.component
 import { FifthStepComponent } from './components/fifth-step/fifth-step.component';
 import { SixtyStepComponent } from './components/sixty-step/sixty-step.component';
 import { FourthStepComponent } from './components/fourth-step/fourth-step.component';
-import { RlgTableComponent } from './components/rlg-table/rlg-table.component';
 import { SvgsComponent } from './components/svgs/svgs.component';
 import { TwoOptionsRadioComponent } from './components/two-options-radio/two-options-radio.component';
 import { SuppliessComponent } from './components/suppliess/suppliess.component';
 import { SendButtonComponent } from './components/send-button/send-button.component';
+import { RfqTableComponent } from './components/rfq-table/rfq-table.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
 
 @NgModule({
   declarations: [
@@ -23,17 +28,36 @@ import { SendButtonComponent } from './components/send-button/send-button.compon
     FifthStepComponent,
     SixtyStepComponent,
     FourthStepComponent,
-    RlgTableComponent,
     SvgsComponent,
     TwoOptionsRadioComponent,
     SuppliessComponent,
-    SendButtonComponent
+    SendButtonComponent,
+    RfqTableComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot(
+    {
+      defaultLanguage:'en',
+      loader:
+      {
+        provide:TranslateLoader,
+        useFactory:CreateTranslateLoader,
+        deps:[HttpClient]
+      }
+    }       
+  )
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export function CreateTranslateLoader(http:HttpClient)
+{
+  return new TranslateHttpLoader(http,'./assets/i18n/','.json')
+}
+
+
+

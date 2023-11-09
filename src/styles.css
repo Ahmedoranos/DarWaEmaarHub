@@ -1,1 +1,393 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: rubic;
+    src: url(assets/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: rubic-hard;
+    src: url(assets/fonts/Rubik/static/Rubik-SemiBoldItalic.ttf);
+  }
+  
+  
+  @font-face {
+    font-family: tajawal;
+    src: url(assets/fonts/Tajawal/Tajawal-Bold.ttf);
+  }
+  
+  
+  @font-face {
+    font-family: tajawal-soft;
+    src: url(assets/fonts/Tajawal/Tajawal-Medium.ttf);
+  }
+  
+  
+  .form {
+    background-color: #EBEDEF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 3rem auto 6rem auto;
+    width: 70%;
+    border: 1px solid rgba(0,0,0,.125);
+  }
+  
+  .side-header
+  {
+    font-family: rubic;
+    font-size: larger;
+    font-weight: 500;
+    margin: 2rem 0 1rem 0;
+  }
+  .form-header{
+    text-align: center;
+    font: 35px rubic-hard !important;
+    color:#ce8b57;
+  }
+  
+  
+  .label-style
+  {
+     font-family: rubic;
+     font-size: large;
+     font-weight: 400;
+  }
+  
+  .label-style-dynamic
+  {
+     font-family: rubic;
+     font-size: large;
+     font-weight: 300;
+     position: relative;
+     top: -70px;
+     left: 10px;
+     right: 10px;
+     cursor: text;
+     display: inline;
+     color: black;
+  }
+  
+  .input-style-dynamic{
+    outline-color: #ce8b57 !important;
+    min-height: 44px;
+    line-height: 28px;
+    outline-width:thin !important;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    color:  #495057;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  
+  }
+  
+  
+  div textarea:focus ~ .label-style-dynamic {
+    font-family: rubic;
+    font-size: large;
+    font-weight: 300;
+    position: relative;
+    top: -180px;
+    left: 10px;
+    right: 10px;
+    background-color: #65707B;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+  }
+  input[type=checkbox]
+  {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(1); /* IE */
+    -moz-transform: scale(1); /* FF */
+    -webkit-transform: scale(1); /* Safari and Chrome */
+    -o-transform: scale(1); /* Opera */
+    padding: 10px;
+  }
+  
+  input[type=radio]
+  {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(1); /* IE */
+    -moz-transform: scale(1); /* FF */
+    -webkit-transform: scale(1); /* Safari and Chrome */
+    -o-transform: scale(1); /* Opera */
+    padding: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .input-style{
+    outline-color: #ce8b57 !important;
+    min-height: 44px;
+    line-height: 28px;
+    outline-width:thin !important;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    color: #495057;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .col-margin{
+    margin:  0 0.5rem;
+  }
+  
+  .vertical-margin
+  {
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+  }
+  
+  
+  
+  
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+    text-align: center;
+    color:#ce8b57;
+    
+  }
+  
+  .subtitle {
+    color: #111f2a;
+    font-family: rubic;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+  
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(240px);
+  }
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-240px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #dc2f55;
+  }
+  
+  .submit {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .formbg {
+      margin: 0px auto;
+      width: 100%;
+      max-width: 448px;
+      background: white;
+      border-radius: 4px;
+      box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+  }
+  
+  
+  .field input {
+      font-size: 16px;
+      line-height: 28px;
+      padding: 8px 16px;
+      width: 100%;
+      min-height: 44px;
+      border: unset;
+      border-radius: 4px;
+      outline-color: rgb(84 105 212 / 0.5);
+      background-color: rgb(255, 255, 255);
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+  }
+  
+  input[type="submit"] {
+      background-color: rgb(84, 105, 212);
+      box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+                  rgb(84, 105, 212) 0px 0px 0px 1px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+                  rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+  }
+  .field-checkbox input {
+      width: 20px;
+      height: 15px;
+      margin-right: 5px; 
+      box-shadow: unset;
+      min-height: unset;
+  }
+  .field-checkbox label {
+      display: flex;
+      align-items: center;
+      margin: 0;
+  }
+  a.ssolink {
+      display: block;
+      text-align: center;
+      font-weight: 600;
+  }
+  .footer-link span {
+      font-size: 14px;
+      text-align: center;
+  }
+  .listing a {
+      color: #697386;
+      font-weight: 600;
+      margin: 0 10px;
+  }
+  
+  
+  .family-tajawal-sof{
+  
+    font-family: tajawal-soft;
+  }
+  
+  
