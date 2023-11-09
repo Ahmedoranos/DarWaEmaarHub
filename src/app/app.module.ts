@@ -9,6 +9,10 @@ import { FifthStepComponent } from './components/fifth-step/fifth-step.component
 import { SixtyStepComponent } from './components/sixty-step/sixty-step.component';
 import { FourthStepComponent } from './components/fourth-step/fourth-step.component';
 import { RlgTableComponent } from './components/rlg-table/rlg-table.component';
+import { SvgsComponent } from './components/svgs/svgs.component';
+import { TwoOptionsRadioComponent } from './components/two-options-radio/two-options-radio.component';
+import { SuppliessComponent } from './components/suppliess/suppliess.component';
+import { SendButtonComponent } from './components/send-button/send-button.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { RlgTableComponent } from './components/rlg-table/rlg-table.component';
     FifthStepComponent,
     SixtyStepComponent,
     FourthStepComponent,
-    RlgTableComponent
+    RlgTableComponent,
+    SvgsComponent,
+    TwoOptionsRadioComponent,
+    SuppliessComponent,
+    SendButtonComponent
   ],
   imports: [
     BrowserModule,
