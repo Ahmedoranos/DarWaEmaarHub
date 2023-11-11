@@ -11,7 +11,7 @@ export class HeaderComponent {
 
 constructor(public translate:TranslateService) {}
 
-isEnglish!:boolean;
+ isEnglish!:boolean;
 
 
 
@@ -31,3 +31,7 @@ isEnglish!:boolean;
     }
   }
 }
+// function output(target: HeaderComponent, propertyKey: 'isEnglish'): void {
+//   throw new Error('Function not implemented.');
+// }
+
